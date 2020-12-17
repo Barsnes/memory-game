@@ -1,0 +1,81 @@
+:root {
+  --background: #ddd
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.buttonContainer {
+  display: grid;
+  padding: 3rem;
+}
+
+button {
+  width: 100px;
+  padding: .6rem 1rem;
+  margin: auto;
+  font-weight: bold;
+  border: 2px solid black;
+  outline: none;
+  border-radius: 8px;
+  background-color: aqua;
+  cursor: pointer;
+
+  transition: transform 300ms ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+}
+
+.top {
+  width: 30%;
+  height: 100%;
+  background-color: var(--background);
+  margin: auto;
+  padding: 1rem;
+
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+
+  box-shadow: 0 4px 10px #00000090;
+}
+
+.top p {
+  height: 30px;
+}
+
+.gameBoard {
+  width: 50%;
+  height: auto;
+  margin: auto;
+  margin-top: 0;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  background-color: var(--background);
+  padding: 2rem;
+  border-radius: 16px;
+
+  box-shadow: 0 4px 10px #00000090;
+}
+
+.gameBoard img {
+  margin: auto;
+}
+
+.foundMatch {
+  color: darkgreen;
+  font-weight: bold;
+  font-size: 2rem;
+}
